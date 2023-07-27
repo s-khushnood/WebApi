@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>Web Api</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav>
+      <ul>
+        <li>
+          <h2>Web Api</h2>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- posts container -->
+      <span class="posts-container"></span>
+
+      <h1>Add Student</h1>
+      <form id="studentForm">
+          <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" name="firstName" id="firstName" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="lastName">Last Name:</label>
+              <input type="text" name="lastName" id="lastName" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="studentAddress">Address:</label>
+              <input type="text" name="studentAddress" id="studentAddress" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="studentAge">Age:</label>
+              <input type="number" name="studentAge" id="studentAge" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="text" name="phoneNumber" id="phoneNumber" required>
+          </div>
+  
+          <div class="form-group">
+              <input type="submit" value="Add Student">
+          </div>
+      </form>
+    <!-- scripts -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
